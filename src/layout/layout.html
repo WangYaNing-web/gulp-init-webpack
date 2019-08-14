@@ -1,0 +1,19 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block meta %} {% endblock %}
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="baidu-site-verification" content="3WKrKZHsc1" />
+    <link rel="shortcut icon" href="{{path}}/static/assets/Logo/t-logo.ico" type="image/x-icon">
+    {% block topLink %} {% endblock %}
+    <link rel="stylesheet" href="{{path}}/static/style/reset.css">
+    <link rel="stylesheet" href="{{path}}/static/style/header.css">
+    {% block link %} {% endblock %}
+</head>
+
+<body>
+    {% block content %} {% endblock %}
+</body>
+	{% block script %} {% endblock %}
+</html>

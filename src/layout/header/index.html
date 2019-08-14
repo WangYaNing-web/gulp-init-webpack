@@ -1,0 +1,43 @@
+{%
+    set data = [
+        {
+            label:'首页',
+            herf:'/'
+        },
+        {
+            label:'系统功能',
+            herf:'/'
+        },
+        {
+            label:'全国网点政策变更',
+            herf:'/'
+        },
+        {
+            label:'社保计算器2019',
+            herf:'/'
+        },
+        {
+            label:'关于微蜂网',
+            herf:'/'
+        }
+    ]    
+%}
+
+<header class='header'>
+    <div class='header-nav'>
+        {% for item in data %}
+            <div class='header-nav-child'>
+                <a href="{{item.herf}}">
+                    {{ item.label }}
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+    <div class='header-login'>
+        <p>400-890-5108</p>
+        <div class='header-login-btn'>
+            <span>登录</span>
+            <span>注册</span>
+        </div>
+    </div>
+</header>
